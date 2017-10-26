@@ -5,13 +5,21 @@
 				<h1><%- page.title %></h1>
 				<div class="meta">
 					Написано <%- date(page.date, 'LL') %>
-					в рубрику <%- page.categories[0] %>
+					<% if (page.categories && page.categories.length) { %>
+						в рубрику 
+						<%- list_categories(page.categories, {
+							show_count: false,
+							separator: "►",
+							class: "",
+							style: ""
+						}) %>
+					<% } %>
 				</div>
 				<div class="entry">
 					<%- page.content %>
 
 					<div class="tags">
-						<%- page.tags[0] %>
+						<%//- page.tags[0] %>
 					</div>
 				</div>					
 			</div>
