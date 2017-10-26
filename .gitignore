@@ -8,3 +8,5 @@ public/
 .deploy*/
 themes/landscape/
 themes/bagautheme/voidy/
+yarn.lock
+package-lock.json
