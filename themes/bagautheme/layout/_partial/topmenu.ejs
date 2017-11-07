@@ -1,5 +1,9 @@
-<div class="topMenu">
+<div class="top-menu">
+	<ul class="top-menu__list">
 	<% for (var i in theme.menu) { %>
-		<a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+		<li class="top-menu__item">
+			<a href="<%- url_for(theme.menu[i]) %>" class="top-menu__item-link"><%= i %></a>
+		</li>
 	<% } %>
+	</ul>
 </div>

@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexoral
+title: Блог Рафиса Багаутдинова
 subtitle:
 description:
-author: John Doe
+author: Рафис Багаутдинов
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://localhost:4000
+url: http://bagau.ru
 root: /
 permalink: :title/
 permalink_defaults:
@@ -22,7 +22,7 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
-category_dir: categories
+category_dir: cat
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -63,6 +63,7 @@ category_map:
   Предназначение: prednaznachenie
   Упражнения: uprazhneniya
   Цели: goals
+  Информация: informaciya
 tag_map:
 
 # Date / Time format
@@ -88,3 +89,14 @@ deploy:
   type: git
   repo: https://github.com/bagau/bagau-public.git
   branch: gh-pages
+
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  pre_class: highlight

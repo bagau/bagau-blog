@@ -2,6 +2,7 @@
 menu:
   Главная: /
   Контакты: /contacty
+  Обо мне: /obo_mne
 
 # Content
 excerpt_link: Read More
@@ -10,11 +11,11 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
+# - category
+# - tag
+# - tagcloud
+# - archive
+# - recent_posts
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
